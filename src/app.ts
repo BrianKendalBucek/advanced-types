@@ -106,3 +106,7 @@ const userInputElement = document.getElementById('user-input') as HTMLInputEleme
 if (userInputElement) {
   (userInputElement as HTMLInputElement).value = 'Hi there!';
 }
+
+interface ErrorContainer {
+  [prop: string;]: string;
+}
