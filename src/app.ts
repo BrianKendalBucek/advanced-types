@@ -50,7 +50,7 @@ console.log(fetchedUserData?.job?.title);
 // example of nullish coalesing
 const userInput = '';
 
-const storedData = userInput || 'DEFAULT';
+const storedData = userInput ?? 'DEFAULT';
 
 console.log(storedData);
 
