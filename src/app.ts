@@ -47,6 +47,13 @@ const fetchedUserData = {
 // typescript method of checking
 console.log(fetchedUserData?.job?.title);
 
+// example of nullish coalesing
+const userInput = '';
+
+const storedData = userInput || 'DEFAULT';
+
+console.log(storedData);
+
 // type UnknownEmployee = Employee | Admin;
 
 // function printEmployeeInformation(emp: UnknownEmployee) {
