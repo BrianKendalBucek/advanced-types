@@ -35,6 +35,18 @@ function add(a: Combinable, b: Combinable) {
 const result = add('Max', ' Schwarz');
 result.split('');
 
+// optional chaining example
+const fetchedUserData = {
+  id: 'ul',
+  name: 'Max',
+  job: { title: 'CEO', description: 'My own company' }
+};
+
+// javascript method of checking
+// console.log(fetchedUserData.job && fetchedUserData.job.title);
+// typescript method of checking
+console.log(fetchedUserData?.job?.title);
+
 // type UnknownEmployee = Employee | Admin;
 
 // function printEmployeeInformation(emp: UnknownEmployee) {
